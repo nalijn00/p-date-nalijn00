@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Date
+comment0.text=\n\ Write\ a\ description\ of\ class\ Date\ here.\n\ \n\ @author\ (Natalia\ Alija\ Novo)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=day\ month\ year
+comment1.target=Date(int,\ int,\ int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Date\n
+comment2.params=
+comment2.target=int\ getYear()
+comment3.params=
+comment3.target=int\ getMonth()
+comment4.params=
+comment4.target=int\ getDay()
+comment5.params=another
+comment5.target=boolean\ isSameYear(Date)
+comment6.params=another
+comment6.target=boolean\ isSameMonth(Date)
+comment7.params=another
+comment7.target=boolean\ isSameDay(Date)
+comment8.params=another
+comment8.target=boolean\ isSame(Date)
+comment9.params=day\ month\ year
+comment9.target=java.lang.String\ toString(int,\ int,\ int)
+numComments=10
