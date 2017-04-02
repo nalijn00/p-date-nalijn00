@@ -20,6 +20,22 @@ public class Date
         this.month=month;
         this.year=year;
     }
+    /*public Date(int Enero, int Febrero, int Marzo, int Abril, int Mayo, int Junio, int Julio, int Agosto, int Septiembre,int Octubre, int Noviembre, int Diciembre)
+    {
+        this.Enero=Enero;
+        this.Febrero=Febrero;
+        this.Marzo=Marzo;
+        this.Abril=Abril;
+        this.Mayo=Mayo;
+        this.Junio=Junio;
+        this.Julio=Julio;
+        this.Agosto=Agosto;
+        this.Septiembre=Septiembre;
+        this.Octubre=Octubre;
+        this.Noviembre=Noviembre;
+        this.Diciembre=Diciembre;
+        
+    }*/
 
    public int getYear(){
        return this.year;
@@ -64,8 +80,76 @@ public class Date
         else
         return false;
     }
+    
+    public boolean isSameYear(Date another){
+        return getYear.equals(another.getYear);
+    }
+    
+    public boolean isSameMonth(Date another){
+        return getMonth.equals(another.getMonth);
+    }
+    
+    public boolean isSameDay(Date another){
+        return getDay.equals(another.getDay);
+    } 
+    
+   
+    
+    
+   
+    /*public boolean printMonth(Date another){
+        if (another.getMonth == 01){
+               return Enero;
+        }
+        
+        if (getMonth == 02){
+               return Febrero;
+        }
+        
+        if (getMonth == 03){
+               return Marzo;
+        }
+        
+        if (getMonth == 04){
+               return Abril;
+        }
+        
+        if (getMonth == 05){
+               return Mayo;
+        }
+        
+        if (getMonth == 06){
+               return Junio;
+        }
+        
+        if (getMonth == 07){
+               return Julio;
+        }
+        
+        if (getMonth == 8){
+               return Agosto;
+        }
+        
+        if (getMonth == 9){
+               return Septiembre;
+        }
+        
+        if (getMonth == 10){
+               return Octubre;
+        }
+        
+        if (getMonth == 11){
+               return Noviembre;
+        }
+        
+        if (getMonth == 12){
+               return Diciembre;
+        }
+    }*/    
+            
+        
 
-    public String toString (int day, int month, int year)
+    public String toString(int day, int month, int year)
     {
         return +this.day+ "/" +this.month+"/"+this.year;
     }

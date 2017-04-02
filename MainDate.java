@@ -14,6 +14,8 @@ public class MainDate{
         System.out.println("isSameMonth = " + today.isSameMonth(tomorrow));
         System.out.println("isSameDay = " + today.isSameDay(tomorrow));
         System.out.println("isSame = " + today.isSame(tomorrow));
+      
+        //System.out.println("printMonth = " +tomorrow.printMonth());
         System.out.println(today.toString());
     }
 
