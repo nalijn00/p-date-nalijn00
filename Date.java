@@ -20,7 +20,7 @@ public class Date
         this.month=month;
         this.year=year;
     }
-    /*public Date(int Enero, int Febrero, int Marzo, int Abril, int Mayo, int Junio, int Julio, int Agosto, int Septiembre,int Octubre, int Noviembre, int Diciembre)
+    public Date(int Enero, int Febrero, int Marzo, int Abril, int Mayo, int Junio, int Julio, int Agosto, int Septiembre,int Octubre, int Noviembre, int Diciembre)
     {
         this.Enero=Enero;
         this.Febrero=Febrero;
@@ -35,7 +35,14 @@ public class Date
         this.Noviembre=Noviembre;
         this.Diciembre=Diciembre;
         
-    }*/
+    }
+    public Date(int primavera, int verano, int otonyo, int invierno)
+    {
+        this.primavera=primavera;
+        this.verano=verano;
+        this.otonyo=otonyo;
+        this.invierno=invierno;
+    }
 
    public int getYear(){
        return this.year;
@@ -97,7 +104,7 @@ public class Date
     
     
    
-    /*public boolean printMonth(Date another){
+    public boolean printMonth(Date another){
         if (another.getMonth == 01){
                return Enero;
         }
@@ -145,8 +152,23 @@ public class Date
         if (getMonth == 12){
                return Diciembre;
         }
-    }*/    
-            
+    }    
+     
+    public boolean getSeason(Date another){
+        if((getMonth == 03) || (getMonth == 04) ||(getMonth == 05) ||(getMonth == 06)){
+            return primavera;
+        }
+        if((getMonth == 07) || (getMonth == 8) ||(getMonth == 9)){
+            return verano;
+        }
+        if((getMonth == 10) || (getMonth == 11) ||(getMonth == 12)){
+            return otonyo;
+        }
+        if((getMonth == 01) || (getMonth == 02)){
+            return invierno;
+        }
+    }
+    
         
 
     public String toString(int day, int month, int year)
